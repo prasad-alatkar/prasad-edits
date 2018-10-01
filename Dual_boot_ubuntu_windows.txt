@@ -1,0 +1,16 @@
+
+
+################## Brief info to install ubuntu or Dual boot ###############################
+1. By default windows 10 in thinkpad
+2. You will get ubuntu image in a bootable drive/card from team member
+3. First make partition in disk:: Go to Control panel --> type 'disk' --> make ~250GB D drive keep it  "Unallocate"
+4. Turn off secure boot from BIOS menu (f1 after reboot)
+5. turn off quick setup from control panel--> power button options.
+6. restart laptop--> press f2--> press enter to interrupt normal startup--> press f12
+7. select option to install ubuntu
+8. while installation starts it will ask for installation method. Select something else.
+9. De-part your D: drive into 3 drives respectively for /root, /home and swap menu. Take help 
+10. once installation is done you can turn on secure reboot option.
+
+
+  
