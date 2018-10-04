@@ -1,0 +1,4 @@
+# changes to track the progress day by day.
+# understood creating and changing the branch
+# target is to understand pull/push/merge into master etc.
+# http://mrbook.org/blog/tutorials/make/ :: tutorial for understanding make command
