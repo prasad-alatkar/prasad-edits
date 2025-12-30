@@ -12,9 +12,10 @@ struct node *ll_add(struct node **, int);
 
 void print_ll(struct node *ll) {
     while (ll != NULL) {
-        printf("[%d] ", ll->data);
+        printf("-[%d] ", ll->data);
         ll = ll->next;
     }
+    printf("EOL ;; \n");
 }
 
 void ll_add_multiple(struct node **ll, int count, ...) {
@@ -65,6 +66,20 @@ struct node *ll_add(struct node ** ll, int data) {
     return head;
 }
 
+struct node *reverse_ll(struct node *ll) {
+    struct node *p, *q, *r;
+
+    p = ll;
+    r = NULL;
+    while(p != NULL) {
+        q = p;
+        p = p->next;
+        q->next = r;
+        r = q;
+    }
+    return q;
+}
+
 int main() {
     // Write C code here
     struct node *linked_list = NULL;
@@ -83,6 +98,8 @@ int main() {
     ll_add(&linked_list, 20);
     ll_add_multiple(&linked_list, 9, 18, 11, 59, 74, 19, 125, 200, 1000, 119);
 
+    print_ll(linked_list);
+    linked_list = reverse_ll(linked_list);
     print_ll(linked_list);
     return 0;
 }
